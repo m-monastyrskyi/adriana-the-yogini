@@ -1,0 +1,19 @@
+.about {
+
+  border-top: 1px solid #444444;
+  &-content {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title {
+      @include title;
+      margin: 100px 0 3rem 0;
+    }
+    &__text {
+      @include paragraph;
+      margin: 3rem 0;
+    }
+  }
+}

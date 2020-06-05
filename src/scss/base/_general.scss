@@ -1,0 +1,16 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-base;
+  //font-family: $font-alt;
+}
+
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}

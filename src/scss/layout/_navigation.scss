@@ -1,0 +1,32 @@
+.navigation {
+  background: #222222;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.1);
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  li {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+    color: $color-text;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: calc(10px + .5vh)
+  }
+
+}
