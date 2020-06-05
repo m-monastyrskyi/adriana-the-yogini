@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 
   .text {
     margin-left: 50px;
@@ -38,5 +38,11 @@ body {
 
   h1, h2, h3, p {
     padding: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
   }
 }
