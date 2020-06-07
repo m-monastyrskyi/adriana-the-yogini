@@ -10,7 +10,27 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 0.8rem 2.6rem;
+  font-family: $font-base;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $color-white;
+  background: $color-gray-dark;
+  outline: none;
+  border: none;
+  border-radius: 100rem;
+  cursor: pointer;
+  margin: 2rem 2rem 0 0;
+  transition: background-color .2s ease-in-out;
+
+  &:hover, &:active {
+    background: darken($color-gray-dark,5%);
+  }
+
 }

@@ -1,19 +1,48 @@
 .about {
-
+  background-color: #111418;
   border-top: 1px solid #444444;
+
   &-content {
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+
+    &__photo {
+      width: 40%;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__info {
+      width: 55%;
+    }
+
     &__title {
       @include title;
-      margin: 100px 0 3rem 0;
+      font-size: 2rem;
+      line-height: 1.2;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
     }
+    &__subtitle {
+      @include subtitle;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      span {
+        color: #7e73b0;
+      }
+    }
+
     &__text {
-      @include paragraph;
-      margin: 3rem 0;
+      p {
+        @include paragraph;
+      }
+
     }
   }
 }

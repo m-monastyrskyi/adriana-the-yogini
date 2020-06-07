@@ -5,6 +5,7 @@ import PriceList from "./PriceList";
 import Contact from "./Contact";
 import Layout from "../Layout";
 import Hero from "./Hero";
+import Offer from "./Offer";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <Layout>
                 <Hero />
                 <AboutMe/>
+                <Offer />
                 <Schedule/>
                 <PriceList/>
                 <Contact/>

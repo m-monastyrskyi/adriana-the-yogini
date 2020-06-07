@@ -1,7 +1,91 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("../../assets/img_01.jpg") no-repeat;
-  background-size: cover;
-  background-position: center top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content: '';
+    background-color: #111418;
+    background-image: url("../../assets/img_01.jpg");
+    background-size: cover;
+    background-position: 0 -150px;
+    background-attachment: fixed;
+    filter: blur(15px) brightness(70%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &-bg {
+    background-image: url("../../assets/img_01.jpg");
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &-content {
+    text-align: center;
+    z-index: 10;
+    background-color: rgba(0,0,0,.5);
+    padding: 1rem;
+    &__title {
+      color: $color-white;
+      font-size: 4.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+      color: #e3e3e3;
+      font-weight: 400;
+      font-size: 1.3rem;
+    }
+
+  }
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 45px;
+  border: 1px solid rgba($color-white, .5);
+  border-radius: 15px;
+
+  &::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $color-white;
+    display: block;
+    border-radius: 50%;
+    margin: 3px auto;
+    animation: scrollball .7s 0s infinite alternate ease-in-out;
+  }
+
+  cursor: pointer;
+}
+
+@keyframes scrollball {
+  100% {
+    margin-top: 28px;
+  }
+  50% {
+    transform: scale(0.8, 1.1);
+  }
 }
