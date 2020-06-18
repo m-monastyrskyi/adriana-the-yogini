@@ -15,6 +15,7 @@
         display: block;
         width: 100%;
         height: auto;
+        box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.55);
       }
     }
 
@@ -29,10 +30,12 @@
       font-weight: 600;
       margin-bottom: 1.5rem;
     }
+
     &__subtitle {
       @include subtitle;
       font-weight: 500;
       margin-bottom: 1.5rem;
+
       span {
         color: #7e73b0;
       }
@@ -45,4 +48,52 @@
 
     }
   }
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+  .about {
+    padding: 50px 0;
+
+    &-content {
+      flex-direction: column;
+      justify-content: flex-start;
+
+      &__photo {
+        width: 100%;
+        margin-bottom: 30px;
+        img {
+          width: auto;
+          height: 100%;
+          max-height: 200px;
+          object-fit: contain;
+        }
+      }
+
+      &__info {
+        width: 100%;
+      }
+      &__title {
+        font-size: 1.5rem;
+      }
+      &__text {
+        p {
+          font-size: 1rem;
+        }
+      }
+      &__buttons {
+        display: flex;
+        justify-content: space-between;
+      }
+      &__btn {
+        font-size: .8rem;
+        padding: 15px;
+        border-radius: 15px;
+        margin: 20px 0;
+      }
+    }
+
+  }
+
+
 }

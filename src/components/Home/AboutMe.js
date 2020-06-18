@@ -21,7 +21,6 @@ const AboutMe = () => {
                         </div>
                         <div className="about-content__info">
                             <h3 className="about-content__title">O mnie</h3>
-                            {/*<h3 className="about-content__subtitle"></h3>*/}
                             <div className="about-content__text">
                                 <p>
                                     Mam na imię Adriana. Z wykształcenia jestem historyczką sztuki oraz dyplomowaną instruktorką hatha jogi i
