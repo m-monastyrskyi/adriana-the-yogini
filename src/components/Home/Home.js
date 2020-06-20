@@ -15,7 +15,7 @@ const Home = () => {
                 <AboutMe/>
                 <Offer />
                 <Schedule/>
-                <PriceList/>
+                {/*<PriceList/>*/}
                 <Contact/>
             </Layout>
         </>
