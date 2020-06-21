@@ -1,0 +1,75 @@
+.offers {
+  padding: 50px 0;
+
+  &__wrapper {
+
+  }
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &__title {
+      width: 30%;
+      padding: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(147, 53, 103, .3);
+
+      h2 {
+        @include title;
+        text-align: center;
+      }
+    }
+
+    &__description {
+      width: 70%;
+      padding: 2em;
+      background-color: rgba(200, 153, 154, .3);
+
+      p {
+        @include paragraph;
+        font-weight: 400;
+      }
+      strong {
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .offers {
+    padding: 20px 0;
+  }
+  .offers-item {
+    flex-direction: column;
+    margin: 50px 0;
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+
+    &__title {
+      width: 100%;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__description {
+      width: 100%;
+
+      p {
+        font-size: 1rem;
+      }
+
+    }
+  }
+}

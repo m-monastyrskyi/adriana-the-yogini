@@ -50,7 +50,7 @@ const Navigation = () => {
                                 </ScrollLink>
                             </li>
                             <li className="navigation__item">
-                                <ScrollLink to={"offer"} spy={true} smooth={true} duration={500} onClick={()=> setIsHamburgerActive(false)}>
+                                <ScrollLink to={"offers"} spy={true} smooth={true} duration={500} onClick={()=> setIsHamburgerActive(false)}>
                                     Oferta
                                 </ScrollLink>
                             </li>

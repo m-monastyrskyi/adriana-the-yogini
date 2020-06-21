@@ -1,0 +1,91 @@
+.contact {
+  background-color: #212529;
+  padding: 30px 0;
+}
+
+.section-contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    @include title;
+    margin-bottom: 60px;
+  }
+}
+
+.error__input {
+  border-bottom: 1px solid $color-red;
+}
+
+.error__text {
+  color: $color-red;
+  margin: 0;
+}
+
+.form__label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+.form__input {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid $color-light;
+  padding: 10px 0;
+  outline: none;
+  color: darken($color-light,30%);
+  margin: 5px 0;
+
+  &::placeholder {
+    color: darken($color-light,30%);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    overflow: hidden;
+  }
+}
+.input-wrapper {
+  margin-bottom: 30px;
+}
+.message-sent {
+  color: #03aa15;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (max-width: $breakpoint-tablet) {
+  .contact {
+    padding: 20px 0;
+  }
+  .section-contact {
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+  }
+  .form__label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  .form__input {
+    font-size: 1rem;
+    &::placeholder {
+      font-size: 1rem;
+    }
+
+  }
+}

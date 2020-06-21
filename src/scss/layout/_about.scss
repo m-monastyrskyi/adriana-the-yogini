@@ -81,19 +81,18 @@
           font-size: 1rem;
         }
       }
-      &__buttons {
-        display: flex;
-        justify-content: space-between;
-      }
-      &__btn {
-        font-size: .8rem;
-        padding: 15px;
-        border-radius: 15px;
-        margin: 20px 0;
-      }
     }
 
   }
-
+  .cta__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .cta__btn {
+    font-size: .8rem;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 20px 0;
+  }
 
 }

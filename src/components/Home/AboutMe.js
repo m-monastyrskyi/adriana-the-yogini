@@ -1,15 +1,8 @@
 import React from 'react';
-import {scroller} from "react-scroll";
 import photo02 from '../../assets/img_02.jpg';
+import ButtonScrollTo from "../ButtonScrollTo";
 
 const AboutMe = () => {
-    const handleClick = (whereToScroll) => {
-        scroller.scrollTo(whereToScroll, {
-            duration: 1000,
-            delay: 0,
-            smooth: 'easeInOutQuart'
-        })
-    }
 
     return (
         <>
@@ -45,9 +38,9 @@ const AboutMe = () => {
                                     Kocham słońce, piękne zapachy i wszelkie rytuały.
                                 </p>
                             </div>
-                            <div className="about-content__buttons">
-                                <button className="about-content__btn btn" onClick={()=>handleClick("schedule")}>Sprawdź grafik</button>
-                                <button className="about-content__btn btn" onClick={()=>handleClick("contact")}>Napisz do mnie</button>
+                            <div className="cta__buttons">
+                                <ButtonScrollTo selector={"schedule"} text={"Sprawdź grafik"}/>
+                                <ButtonScrollTo selector={"contact"} text={"Napisz do mnie"}/>
                             </div>
                         </div>
                     </div>
