@@ -14,7 +14,7 @@ const Contact = () => {
         const errors = {};
         if (!name) {
             errors.name = 'Wymagane';
-        } else if (name.indexOf(" ") >= 0) {
+        } else if (name.length < 2) {
             errors.name = 'Podane imię jest nieprawidłowe!';
         }
 
@@ -26,8 +26,8 @@ const Contact = () => {
 
         if (!message) {
             errors.message = 'Wymagane';
-        } else if (message.length < 120) {
-            errors.message = 'Wiadomość musi mieć conajmniej 120 znaków!';
+        } else if (message.length < 20) {
+            errors.message = 'Wiadomość musi mieć conajmniej 20 znaków!';
         }
         if (!errors.name && !errors.email && !errors.message) {
             errors.ok = true;
