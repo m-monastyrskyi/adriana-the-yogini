@@ -1,0 +1,95 @@
+.schedule {
+  padding: 100px 0;
+  background-color: #111418;
+  border-top: 1px solid #444444;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-wrapper {
+    display: flex;
+  }
+}
+
+.single-day {
+  width: calc(100% / 7);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(147, 53, 103, .3);
+  padding: 10px;
+
+  &__day {
+    padding: 30px 10px;
+    background-color: rgba(147, 53, 103, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+      @include title;
+      font-size: .9rem;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &__first {
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include paragraph;
+    height: 35%;
+    background-color: rgba(200, 153, 154, .3);
+  }
+
+  &__second {
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include paragraph;
+    height: 35%;
+    background-color: rgba(200, 153, 154, .3);
+  }
+
+  &__time {
+    //font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  &__title {
+    padding: 10px 0;
+
+  }
+
+  &__description {
+    font-size: .7rem;
+  }
+
+
+}
+
+@media (max-width: 1150px) {
+
+  .schedule {
+    padding: 80px 0;
+    &-wrapper {
+      flex-direction: column;
+    }
+  }
+
+  .single-day {
+    width: 100%;
+  }
+
+}

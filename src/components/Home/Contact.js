@@ -85,13 +85,13 @@ const Contact = () => {
                             <form className="section-contact__form" onSubmit={handleSubmit}>
 
                                 <div className="input-wrapper">
-                                    <label className="form__label" htmlFor="name">Wpisz swoje imię</label>
+                                    <label className="form__label" htmlFor="name">Imię</label>
                                     <input
                                         className={errors.name ? "form__input error__input" : "form__input"}
                                         id="name"
                                         name="name"
                                         type="text"
-                                        placeholder="Imię"
+                                      //  placeholder="Imię"
                                         value={name}
                                         onChange={e => setName(e.target.value)}
                                         onFocus={() => {
@@ -104,13 +104,13 @@ const Contact = () => {
                                 </div>
 
                                 <div className="input-wrapper">
-                                    <label className="form__label" htmlFor="email">Wpisz swój email</label>
+                                    <label className="form__label" htmlFor="email">Email</label>
                                     <input
                                         className={errors.email ? "form__input error__input" : "form__input"}
                                         id="email"
                                         name="email"
                                         type="email"
-                                        placeholder="abc@xyz.pl"
+                                      //  placeholder="abc@xyz.pl"
                                         value={email}
                                         onChange={e => setEmail(e.target.value)}
                                         onFocus={() => setErrors({})}
@@ -120,13 +120,13 @@ const Contact = () => {
                                     }
                                 </div>
 
-                                <label className="form__label" htmlFor="message">Wpisz swoją wiadomość</label>
+                                <label className="form__label" htmlFor="message">Wiadomość</label>
                                 <textarea
                                     rows="4"
                                     className={errors.message ? "form__input error__input" : "form__input"}
                                     id="message"
                                     name="message"
-                                    placeholder="Napisz wiadomość dla mnie"
+                                   // placeholder="Napisz wiadomość dla mnie"
                                     value={message}
                                     onChange={e => setMessage(e.target.value)}
                                     onFocus={() => setErrors({})}
