@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import axios from "axios";
+import emailjs from 'emailjs-com';
+
 
 const Contact = () => {
 
@@ -8,6 +9,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
     const [errors, setErrors] = useState({});
     const [serverResponse, setServerResponse] = useState('');
+    const [isSending, setIsSending] = useState(false);
 
     const validate = (name, email, message) => {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -35,33 +37,38 @@ const Contact = () => {
         return errors;
     }
 
-    const sendMessage = () => {
-        axios.post('https://fer-api.coderslab.pl/v1/portfolio/contact', {
-            name,
-            email,
-            message
-        })
-            .then(response => {
-                console.log(response);
+    const sendMessage = (name, email, message) => {
+
+        let templateParams = {
+            from_name: name,
+            email: email,
+            message_html: message
+        }
+        setIsSending(true);
+        emailjs.send('smtp_server', 'template_DfplQiJ3', templateParams, 'user_JPiJPRkRkmt3W1rbi86Q4')
+            .then((response) => {
+                console.log('SUCCESS!', response.status, response.text);
                 if (response.status === 200) {
                     setServerResponse('Wiadomość została wysłana! Wkrótce się skontaktujemy!');
                     setName('');
                     setEmail('');
                     setMessage('');
-                    setTimeout(()=>{
+                    setIsSending(false);
+                    setTimeout(() => {
                         setServerResponse('');
-                    },3000)
+                    }, 5000)
                 }
-            })
-            .catch(error => {
-                console.log(error);
+            }, (err) => {
+                console.log('FAILED...', err);
+                setIsSending(false);
+                setServerResponse('Coś poszło nie tak :(');
             });
     }
 
     const handleSubmit = e => {
         e.preventDefault();
         const result = validate(name, email, message);
-        result.ok ? sendMessage() : setErrors(result);
+        result.ok ? sendMessage(name, email, message) : setErrors(result);
     }
 
 
@@ -70,76 +77,79 @@ const Contact = () => {
             <section className="contact">
 
 
-                    <div className="container">
+                <div className="container">
 
-                        <div className="section-contact">
+                    <div className="section-contact">
 
-                            <div className="section-contact__title">
-                                <h2>Skontaktuj się ze mną</h2>
+                        <div className="section-contact__title">
+                            <h2>Skontaktuj się ze mną</h2>
+                        </div>
+
+                        {
+                            serverResponse && serverResponse === 'Coś poszło nie tak :('
+                                ? <h3 className="message-error">{serverResponse}</h3>
+                                : <h3 className="message-sent">{serverResponse}</h3>
+                        }
+
+                        <form className="section-contact__form" onSubmit={handleSubmit}>
+
+                            <div className="input-wrapper">
+                                <label className="form__label" htmlFor="name">Imię:</label>
+                                <input
+                                    className={errors.name ? "form__input error__input" : "form__input"}
+                                    id="name"
+                                    name="name"
+                                    type="text"
+                                    //  placeholder="Imię"
+                                    value={name}
+                                    onChange={e => setName(e.target.value)}
+                                    onFocus={() => {
+                                        setErrors({});
+                                    }}
+                                />
+                                {
+                                    errors.name && <h3 className="error__text">{errors.name}</h3>
+                                }
                             </div>
 
-                            {
-                                serverResponse && <h3 className="message-sent">{serverResponse}</h3>
-                            }
-
-                            <form className="section-contact__form" onSubmit={handleSubmit}>
-
-                                <div className="input-wrapper">
-                                    <label className="form__label" htmlFor="name">Imię</label>
-                                    <input
-                                        className={errors.name ? "form__input error__input" : "form__input"}
-                                        id="name"
-                                        name="name"
-                                        type="text"
-                                      //  placeholder="Imię"
-                                        value={name}
-                                        onChange={e => setName(e.target.value)}
-                                        onFocus={() => {
-                                            setErrors({});
-                                        }}
-                                    />
-                                    {
-                                        errors.name && <h3 className="error__text">{errors.name}</h3>
-                                    }
-                                </div>
-
-                                <div className="input-wrapper">
-                                    <label className="form__label" htmlFor="email">Email</label>
-                                    <input
-                                        className={errors.email ? "form__input error__input" : "form__input"}
-                                        id="email"
-                                        name="email"
-                                        type="email"
-                                      //  placeholder="abc@xyz.pl"
-                                        value={email}
-                                        onChange={e => setEmail(e.target.value)}
-                                        onFocus={() => setErrors({})}
-                                    />
-                                    {
-                                        errors.email && <h3 className="error__text">{errors.email}</h3>
-                                    }
-                                </div>
-
-                                <label className="form__label" htmlFor="message">Wiadomość</label>
-                                <textarea
-                                    rows="4"
-                                    className={errors.message ? "form__input error__input" : "form__input"}
-                                    id="message"
-                                    name="message"
-                                   // placeholder="Napisz wiadomość dla mnie"
-                                    value={message}
-                                    onChange={e => setMessage(e.target.value)}
+                            <div className="input-wrapper">
+                                <label className="form__label" htmlFor="email">Email:</label>
+                                <input
+                                    className={errors.email ? "form__input error__input" : "form__input"}
+                                    id="email"
+                                    name="email"
+                                    type="email"
+                                    //  placeholder="abc@xyz.pl"
+                                    value={email}
+                                    onChange={e => setEmail(e.target.value)}
                                     onFocus={() => setErrors({})}
                                 />
                                 {
-                                    errors.message && <h3 className="error__text">{errors.message}</h3>
+                                    errors.email && <h3 className="error__text">{errors.email}</h3>
                                 }
-                                <div className="submit__wrapper">
-                                    <button className="form__submit btn" type="submit">Wyślij</button>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+
+                            <label className="form__label" htmlFor="message">Wiadomość:</label>
+                            <textarea
+                                rows="4"
+                                className={errors.message ? "form__input error__input" : "form__input"}
+                                id="message"
+                                name="message"
+                                // placeholder="Napisz wiadomość dla mnie"
+                                value={message}
+                                onChange={e => setMessage(e.target.value)}
+                                onFocus={() => setErrors({})}
+                            />
+                            {
+                                errors.message && <h3 className="error__text">{errors.message}</h3>
+                            }
+                            <div className="submit__wrapper">
+                                <button className="form__submit btn" type="submit"
+                                        disabled={isSending}>{isSending ? "Wysyłam..." : "Wyślij"}</button>
+                            </div>
+                        </form>
                     </div>
+                </div>
 
             </section>
         </>
