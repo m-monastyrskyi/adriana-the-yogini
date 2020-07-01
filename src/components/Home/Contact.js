@@ -28,8 +28,8 @@ const Contact = () => {
 
         if (!message) {
             errors.message = 'Wymagane';
-        } else if (message.length < 20) {
-            errors.message = 'Wiadomość musi mieć conajmniej 20 znaków!';
+        } else if (message.length < 10) {
+            errors.message = 'Wiadomość musi mieć conajmniej 10 znaków!';
         }
         if (!errors.name && !errors.email && !errors.message) {
             errors.ok = true;
@@ -45,7 +45,7 @@ const Contact = () => {
             message_html: message
         }
         setIsSending(true);
-        emailjs.send('smtp_server', 'template_DfplQiJ3', templateParams, 'user_JPiJPRkRkmt3W1rbi86Q4')
+        emailjs.send(process.env.REACT_APP_EMAIL_SERVISE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, templateParams, process.env.REACT_APP_EMAIL_USER_ID)
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 if (response.status === 200) {
