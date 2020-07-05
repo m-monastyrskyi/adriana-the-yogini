@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
 
 
-const Contact = () => {
+const Contact = ({contact}) => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -15,21 +15,21 @@ const Contact = () => {
         const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         const errors = {};
         if (!name) {
-            errors.name = 'Wymagane';
+            errors.name = contact.statuses.required;
         } else if (name.length < 2) {
-            errors.name = 'Podane imię jest nieprawidłowe!';
+            errors.name = contact.statuses.errorName;
         }
 
         if (!email) {
-            errors.email = 'Wymagane';
+            errors.email = contact.statuses.required;
         } else if (!re.test(String(email).toLowerCase())) {
-            errors.email = 'Podany email jest nieprawidłowy';
+            errors.email = contact.statuses.errorEmail;
         }
 
         if (!message) {
-            errors.message = 'Wymagane';
+            errors.message = contact.statuses.required;
         } else if (message.length < 10) {
-            errors.message = 'Wiadomość musi mieć conajmniej 10 znaków!';
+            errors.message = contact.statuses.errorMessage;
         }
         if (!errors.name && !errors.email && !errors.message) {
             errors.ok = true;
@@ -49,7 +49,7 @@ const Contact = () => {
             .then((response) => {
                 console.log('SUCCESS!', response.status, response.text);
                 if (response.status === 200) {
-                    setServerResponse('Wiadomość została wysłana! Wkrótce się skontaktujemy!');
+                    setServerResponse(contact.statuses.sendingOk);
                     setName('');
                     setEmail('');
                     setMessage('');
@@ -61,7 +61,7 @@ const Contact = () => {
             }, (err) => {
                 console.log('FAILED...', err);
                 setIsSending(false);
-                setServerResponse('Coś poszło nie tak :(');
+                setServerResponse(contact.statuses.sendingFail);
             });
     }
 
@@ -76,17 +76,16 @@ const Contact = () => {
         <>
             <section className="contact">
 
-
                 <div className="container">
 
                     <div className="section-contact">
 
                         <div className="section-contact__title">
-                            <h2>Skontaktuj się ze mną</h2>
+                            <h2>{contact.title}</h2>
                         </div>
 
                         {
-                            serverResponse && serverResponse === 'Coś poszło nie tak :('
+                            serverResponse && serverResponse === contact.statuses.sendingFail
                                 ? <h3 className="message-error">{serverResponse}</h3>
                                 : <h3 className="message-sent">{serverResponse}</h3>
                         }
@@ -94,7 +93,7 @@ const Contact = () => {
                         <form className="section-contact__form" onSubmit={handleSubmit}>
 
                             <div className="input-wrapper">
-                                <label className="form__label" htmlFor="name">Imię:</label>
+                                <label className="form__label" htmlFor="name">{contact.name}</label>
                                 <input
                                     className={errors.name ? "form__input error__input" : "form__input"}
                                     id="name"
@@ -129,7 +128,7 @@ const Contact = () => {
                                 }
                             </div>
 
-                            <label className="form__label" htmlFor="message">Wiadomość:</label>
+                            <label className="form__label" htmlFor="message">{contact.message}</label>
                             <textarea
                                 rows="4"
                                 className={errors.message ? "form__input error__input" : "form__input"}
@@ -145,7 +144,7 @@ const Contact = () => {
                             }
                             <div className="submit__wrapper">
                                 <button className="form__submit btn" type="submit"
-                                        disabled={isSending}>{isSending ? "Wysyłam..." : "Wyślij"}</button>
+                                        disabled={isSending}>{isSending ? `${contact.btnSending}...` : contact.btnSend}</button>
                             </div>
                         </form>
                     </div>

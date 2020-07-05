@@ -1,24 +1,20 @@
 import React from 'react';
 import AboutMe from "./AboutMe";
 import Schedule from "./Schedule";
-//import PriceList from "./PriceList";
 import Contact from "./Contact";
 import Layout from "../Layout";
 import Hero from "./Hero";
 import Offer from "./Offer";
 
-const Home = () => {
+const Home = ({data}) => {
     return (
-        <>
-            <Layout>
-                <Hero />
-                <AboutMe/>
-                <Offer />
-                <Schedule/>
-                {/*<PriceList/>*/}
-                <Contact/>
-            </Layout>
-        </>
+        <Layout navItems={data.nav}>
+            <Hero heroItems={data.hero} />
+            <AboutMe info={data.aboutMe}/>
+            <Offer offersList={data.offersList}/>
+            <Schedule schedule={data.schedule} />
+            <Contact contact={data.contact}/>
+        </Layout>
     );
 };
 
