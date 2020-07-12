@@ -31,3 +31,5 @@ yarn-error.log*
 .idea/
 
 .env
+/root
+adriana-the-yogini-export.json

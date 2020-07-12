@@ -20,8 +20,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(147, 53, 103, .3);
-
+     // background-color: rgba(147, 53, 103, .3);
+      background-color: rgba(0,0,0,.5);
       h2 {
         @include title;
         text-align: center;
@@ -31,8 +31,8 @@
     &__description {
       width: 70%;
       padding: 2em;
-      background-color: rgba(200, 153, 154, .3);
-
+    //  background-color: rgba(200, 153, 154, .3);
+      background-color: rgba(0,0,0,.5);
       p {
         @include paragraph;
         font-weight: 400;

@@ -11,7 +11,7 @@ const UseGetData = () => {
         ref.on("value", function (snapshot) {
             setData(snapshot.val());
             setLoading(false);
-            console.log(snapshot.val());
+           // console.log(snapshot.val());
 
         }, function (error) {
             console.log("Error: " + error.code);

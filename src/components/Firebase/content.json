@@ -13,14 +13,14 @@
         },
         "aboutMe": {
             "title": "O mnie",
-            "info": "<p>Mam na imię Adriana. Z wykształcenia jestem historyczką sztuki oraz dyplomowaną instruktorką hatha jogi i relaksacji. Przygodę z jogą rozpoczęłam w 2014 r. Pasja z czasem przerodziła się w sposób na życie. Chętnie pomagam stawiać pierwsze kroki na macie.</p><p>Ważne jest dla mnie indywidualne podejście oraz słuchanie ciała – zarówno jego potrzeb, jak i ograniczeń – dlatego lubię pracować w małych grupach. Chciałabym wprowadzać w życie innych więcej świadomego, miękkiego ruchu z uwagą na oddechu i poszanowaniu ciała, więcej odprężenia i relaksu. Poza jogą tańczę i jeżdżę na rowerze. Jestem miłośniczką podróży, poznawania nowych kultur, kina, zdrowego jedzenia i planszówek. Kocham słońce, piękne zapachy i wszelkie rytuały.</p>",
+            "info": "<p>Jestem historyczką sztuki oraz instruktorką hatha jogi i relaksacji, pracującą w branży reklamowo-filmowej. Przygodę z jogą rozpoczęłam w 2014 r. Pasja z czasem przerodziła się w sposób na życie. Chętnie pomagam stawiać pierwsze kroki na macie w przyjaznych, kameralnych warunkach.</p><p>Ważne jest dla mnie indywidualne podejście oraz słuchanie ciała – zarówno jego potrzeb, jak i ograniczeń – dlatego lubię pracować w małych grupach. Chciałabym wprowadzać w życie innych więcej świadomego, miękkiego ruchu z uwagą na oddechu i poszanowaniu ciała, więcej odprężenia i relaksu. Poza jogą tańczę, jeżdżę na rowerze, medytuję, czytam, zwiedzam, gram w planszówki i generalnie zachwycam się światem. Lubię otaczać się naturą, muzyką, pięknymi zapachami i ludźmi z poczuciem humoru. Kocham słońce, wino i dobre jedzenie.</p><p>Satysfakcję przynosi mi dzielenie się wiedzą na temat korzyści płynących z regularnej praktyki hatha jogi i technik relaksacyjnych. Marzę o doskonaleniu swoich umiejętności nauczycielskich w bezpośrednim kontakcie z ludźmi z całego świata. Uczę podstaw jogi, ale osoby bardziej zaawansowane w temacie, nie będą się nudzić. Najlepiej czuję się podczas powolnej, spokojnej i regenerującej praktyki. Jeśli tego właśnie szukasz, spotkajmy się na wspólnych ćwiczeniach.</p>",
             "btnCheckSchedule": "Sprawdź grafik",
             "btnContactMe": "Napisz do mnie"
         },
         "offersList": [
             {
                 "title": "ZAJĘCIA ONLINE NA PLATFORMIE ZOOM",
-                "description": "<p>Zajęcia hatha jogi przeznaczone dla wszystkich, którzy chcą się trochę poruszać, a z różnych powodów nie mogą uczestniczyć w zajęciach na sali i prywatnych sesjach lub są spoza Warszawy. Osoby początkujące spokojnie sobie poradzą, a te zaawansowane mogą liczyć na trudniejsze warianty, ponieważ każdą asanę (pozycję w jodze) można modyfikować i dopasowywać do indywidualnych potrzeb i możliwości.</p><p>- grupa regularna - zajęcia odbywają się w czwartki o godzinie 18:30</p><p>- indywidualne rezerwacje - terminy do uzgodnienia</p><p>Zarówno w grupie stałej, jak i prywatnej, zajęcia startują, gdy udział potwierdzą minimum 2 osoby.</p><p>Koszt: 60 min. | 1 os. - 20 zł</p><p>*Karnet na 4 wejścia - 75 zł [do wykorzystania w ciągu 6 tygodni od daty zakupu]</p>",
+                "description": "<p>Zajęcia hatha jogi przeznaczone dla wszystkich, którzy chcą się trochę poruszać, a z różnych powodów nie mogą uczestniczyć w zajęciach na sali i prywatnych sesjach lub są spoza Warszawy. Osoby początkujące spokojnie sobie poradzą, a te zaawansowane mogą liczyć na trudniejsze warianty, ponieważ każdą asanę (pozycję w jodze) można modyfikować i dopasowywać do indywidualnych potrzeb i możliwości.</p><p>- grupa otwarta - zajęcia odbywają się w czwartki o godzinie 18:30</p><p>- indywidualne rezerwacje - terminy do uzgodnienia</p><p>Zajęcia w grupie otwartej startują po potwierdzeniu udziału co najmniej 2 osób.</p><p>Koszt: 60 min. | 1 os. - 20 zł</p><p>*Karnet na 4 wejścia - 75 zł [do wykorzystania w ciągu 6 tygodni od daty zakupu]</p>",
                 "ctaText": "Pytania i zapisy:",
                 "ctaBtnText": "Napisz do mnie"
             },
@@ -30,8 +30,8 @@
                 "ctaText": null
             },
             {
-                "title": "JOGA PLENEROWA",
-                "description": "<p>Wakacyjny cykl zajęć jogi w ramach rekreacji ruchowej na świeżym powietrzu.</p><p><strong>Zapraszam w każdą sobotę o godzinie 9:30 na Kamionkowskie Błonia Elekcyjne.</strong></p><p>Zbiórka przy wieżach lęgowych dla jerzyków :)</p><p>Wystarczy mieć ze sobą matę lub koc, strój sportowy i krem z filtrem (ćwiczymy w cieniu drzew, ale warto się zabezpieczyć).</p><p>Plenerowa sesja jogi jest bezpłatna. Jeśli jednak ktoś chciałby wesprzeć moje działania, - będzie taka możliwość :)</p>",
+                "title": "JOGA W PLENERZE",
+                "description": "<p>Joga w plenerze to wakacyjny cykl zajęć hatha jogi w ramach rekreacji ruchowej na świeżym powietrzu.</p><p>Zapraszam w każdą* sobotę o godzinie 9:30 na Kamionkowskie Błonia Elekcyjne (Praga-Południe, tuż obok Parku Skaryszewskiego).</p><p>*O ile pogoda będzie łaskawa, a jeśli nie, to do godziny przed rozpoczęciem wydarzenia poinformuję, czy ćwiczymy.</p><p>Zbiórka przy wieżach lęgowych dla jerzyków. Wystarczy mieć ze sobą matę/koc/ręcznik i strój sportowy.</p><p>Plenerowa sesja jogi jest bezpłatna.</p><p>Dla chętnych, będzie możliwość wsparcia moich działań.</p>",
                 "ctaText": "Pytania:"
             },
             {
