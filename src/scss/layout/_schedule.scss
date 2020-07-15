@@ -7,6 +7,12 @@
   justify-content: center;
   align-items: center;
 
+  &__title {
+    @include title;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
   &-wrapper {
     display: flex;
   }
@@ -18,13 +24,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- // background-color: rgba(147, 53, 103, .3);
+  // background-color: rgba(147, 53, 103, .3);
   padding: 10px;
 
   &__day {
     padding: 30px 10px;
- //   background-color: rgba(147, 53, 103, .3);
-    background-color: rgba(0,0,0,.3);
+    //   background-color: rgba(147, 53, 103, .3);
+    background-color: rgba(0, 0, 0, .3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,8 +39,8 @@
     h2 {
       @include title;
       font-size: .9rem;
-      overflow:hidden;
-      white-space:nowrap;
+      overflow: hidden;
+      white-space: nowrap;
       text-overflow: ellipsis;
     }
   }
@@ -48,8 +54,8 @@
     align-items: center;
     @include paragraph;
     height: 35%;
-   // background-color: rgba(200, 153, 154, .3);
-    background-color: rgba(255,255,255,.05);
+    // background-color: rgba(200, 153, 154, .3);
+    background-color: rgba(255, 255, 255, .05);
   }
 
   &__second {
@@ -62,7 +68,7 @@
     @include paragraph;
     height: 35%;
     //background-color: rgba(200, 153, 154, .3);
-    background-color: rgba(255,255,255,.05);
+    background-color: rgba(255, 255, 255, .05);
   }
 
   &__time {
@@ -86,6 +92,7 @@
 
   .schedule {
     padding: 80px 0;
+
     &-wrapper {
       flex-direction: column;
     }

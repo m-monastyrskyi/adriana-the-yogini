@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import emailjs from 'emailjs-com';
+import EmailLink from "../EmailLink";
 
 
 const Contact = ({contact}) => {
@@ -83,7 +84,9 @@ const Contact = ({contact}) => {
                         <div className="section-contact__title">
                             <h2>{contact.title}</h2>
                         </div>
-
+                        <div className="section-contact__mail">
+                            <p>Wyślij email: <EmailLink/> <br />lub wypenij formularz</p>
+                        </div>
                         {
                             serverResponse && serverResponse === contact.statuses.sendingFail
                                 ? <h3 className="message-error">{serverResponse}</h3>

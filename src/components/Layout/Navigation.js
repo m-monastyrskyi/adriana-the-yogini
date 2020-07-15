@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Link as ScrollLink} from 'react-scroll';
 import classNames from 'classnames';
+import SocialIcons from "./SocialIcons";
 
 const Navigation = ({navItems}) => {
     const [bgClass, setBgClass] = useState(false);
@@ -24,13 +25,11 @@ const Navigation = ({navItems}) => {
         setIsHamburgerActive(prev => !prev);
     }
 
-
     return (
         <>
             <div className="nav-wrapper">
                 <nav className={classNames("navigation", bgClass && "nav-bg")}>
                     <div className="container">
-
                         <button className={classNames("hamburger", isHamburgerActive && "hamburger-active")}
                                 onClick={handleHamburgerClick}>
                             <div className="bar1"/>
@@ -64,6 +63,8 @@ const Navigation = ({navItems}) => {
                                     {navItems.contact}
                                 </ScrollLink>
                             </li>
+                            <SocialIcons isNav={true}/>
+
                         </ul>
                     </div>
                 </nav>

@@ -1,0 +1,51 @@
+.socialIcons {
+  svg {
+    fill: #f8f9fa;
+    width: 1.6rem;
+    height: 1.6rem;
+    transition: fill .2s ease-in-out;
+
+    &:hover {
+      fill: darken(#f8f9fa, 30%);
+    }
+  }
+
+}
+.socialIconsLink {
+  margin: 10px;
+}
+
+
+.navSocialIcons {
+  //position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg {
+    fill: #f8f9fa;
+    width: 1.3rem;
+    height: 1.3rem;
+    transition: fill .2s ease-in-out;
+
+    &:hover {
+      fill: darken(#f8f9fa, 30%);
+    }
+  }
+
+}
+.navSocialIconsLink {
+  &:last-child{
+    transform: translateX(-20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .navSocialIconsLink {
+    &:first-child{
+      transform: translate(0,-3px);
+    }
+    &:last-child{
+      transform: translate(-20px, -3px);
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.footer {
+  padding: 100px 30px;
+  background-color: #111111;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &__copyright-text {
+    @include paragraph;
+    color: $color-gray;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

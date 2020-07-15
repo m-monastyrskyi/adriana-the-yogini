@@ -1,10 +1,14 @@
 .contact {
   background-color: #212529;
   padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .section-contact {
-  min-height: 100vh;
+  //min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,6 +17,9 @@
   &__title {
     @include title;
     margin-bottom: 60px;
+  }
+  &__mail{
+    @include paragraph;
   }
 }
 

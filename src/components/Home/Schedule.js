@@ -5,6 +5,7 @@ const Schedule = ({schedule}) => {
         <>
             <section className="schedule">
                 <div className="container">
+                    <h2 className="schedule__title">Grafik</h2>
                     <div className="schedule-wrapper">
 
                         {

@@ -8,6 +8,7 @@ const Offer = ({offersList}) => {
         <>
             <section className="offers">
                 <div className="container">
+                    <h2 className="offers__title">Oferta</h2>
                     <div className="offers__wrapper">
                         {
                             offersList.map((offer, index) => <div className="offers-item" key={index}>

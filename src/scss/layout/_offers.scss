@@ -1,5 +1,10 @@
 .offers {
-  padding: 50px 0;
+  padding: 100px 0;
+
+  &__title {
+    @include title;
+    text-align: center;
+  }
 
   &__wrapper {
 
@@ -8,7 +13,7 @@
   &-item {
     display: flex;
     justify-content: space-between;
-    margin: 100px 0;
+    margin: 50px 0;
 
     &:nth-child(even) {
       flex-direction: row-reverse;
