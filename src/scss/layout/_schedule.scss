@@ -24,13 +24,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // background-color: rgba(147, 53, 103, .3);
+  // background-color: rgba(147, 53, 103, .1);
   padding: 10px;
 
   &__day {
     padding: 30px 10px;
-    //   background-color: rgba(147, 53, 103, .3);
-    background-color: rgba(0, 0, 0, .3);
+       background-color: rgba(60, 52, 79, 0.8);
+    //background-color: rgba(0, 0, 0, .3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,8 +44,11 @@
       text-overflow: ellipsis;
     }
   }
+// rgba(60, 52, 79, 0.8), rgba(60, 52, 79, 0.4) -- ten kolor, bez tla
 
-  &__first {
+  // buttony tez rgba(60, 52, 79, 0.8)
+
+  &__first, &__second {
     padding: 5px;
     display: flex;
     text-align: center;
@@ -54,22 +57,22 @@
     align-items: center;
     @include paragraph;
     height: 35%;
-    // background-color: rgba(200, 153, 154, .3);
-    background-color: rgba(255, 255, 255, .05);
+     background-color: rgba(60, 52, 79, 0.4);
+    //background-color: rgba(255, 255, 255, .05);
   }
 
-  &__second {
-    padding: 5px;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @include paragraph;
-    height: 35%;
-    //background-color: rgba(200, 153, 154, .3);
-    background-color: rgba(255, 255, 255, .05);
-  }
+  //&__second {
+  //  padding: 5px;
+  //  display: flex;
+  //  text-align: center;
+  //  flex-direction: column;
+  //  justify-content: center;
+  //  align-items: center;
+  //  @include paragraph;
+  //  height: 35%;
+  //  background-color: rgba(60, 52, 79, 0.4);
+  //  //background-color: rgba(255, 255, 255, .05);
+  //}
 
   &__time {
     //font-size: 1.5rem;

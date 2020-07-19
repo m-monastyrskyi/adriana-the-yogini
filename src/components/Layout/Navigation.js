@@ -39,31 +39,39 @@ const Navigation = ({navItems}) => {
 
                         <ul className={classNames("navigation__list", isHamburgerActive && "mobile__active")}>
                             <li className="navigation__item">
-                                <ScrollLink to={"hero"} spy={true} smooth={true} duration={500} onClick={()=> setIsHamburgerActive(false)}>
+                                <ScrollLink to={"hero"} spy={true} smooth={true} duration={500}
+                                            onClick={() => setIsHamburgerActive(false)}>
                                     {navItems.home}
                                 </ScrollLink>
                             </li>
                             <li className="navigation__item">
-                                <ScrollLink to={"about"} spy={true} smooth={true} duration={500} onClick={()=> setIsHamburgerActive(false)}>
+                                <ScrollLink to={"about"} spy={true} smooth={true} duration={500}
+                                            onClick={() => setIsHamburgerActive(false)}>
                                     {navItems.about}
                                 </ScrollLink>
                             </li>
                             <li className="navigation__item">
-                                <ScrollLink to={"offers"} spy={true} smooth={true} duration={500} onClick={()=> setIsHamburgerActive(false)}>
+                                <ScrollLink to={"offers"} spy={true} smooth={true} duration={500}
+                                            onClick={() => setIsHamburgerActive(false)}>
                                     {navItems.offer}
                                 </ScrollLink>
                             </li>
                             <li className="navigation__item">
-                                <ScrollLink to={"schedule"} spy={true} smooth={true} duration={500} onClick={()=> setIsHamburgerActive(false)}>
+                                <ScrollLink to={"schedule"} spy={true} smooth={true} duration={500}
+                                            onClick={() => setIsHamburgerActive(false)}>
                                     {navItems.schedule}
                                 </ScrollLink>
                             </li>
                             <li className="navigation__item">
-                                <ScrollLink to={"contact"} spy={true} smooth={true} duration={500} onClick={()=> setIsHamburgerActive(false)}>
+                                <ScrollLink to={"contact"} spy={true} smooth={true} duration={500}
+                                            onClick={() => setIsHamburgerActive(false)}>
                                     {navItems.contact}
                                 </ScrollLink>
                             </li>
-                            <SocialIcons isNav={true}/>
+
+                            <li className="navigation__item">
+                                <SocialIcons isNav={true}/>
+                            </li>
 
                         </ul>
                     </div>

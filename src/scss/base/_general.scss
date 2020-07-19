@@ -21,7 +21,8 @@ body {
   font-size: 1rem;
   font-weight: 500;
   color: $color-white;
-  background: $color-gray-dark;
+  //background: $color-gray-dark;
+  background: rgba(60, 52, 79, 0.8);
   outline: none;
   border: none;
   border-radius: 100rem;
@@ -30,7 +31,7 @@ body {
   transition: background-color .2s ease-in-out;
 
   &:hover, &:active {
-    background: darken($color-gray-dark, 5%);
+    background: darken(rgba(60, 52, 79, 0.8), 5%);
   }
 
 }

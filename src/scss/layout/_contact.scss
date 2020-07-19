@@ -17,9 +17,12 @@
   &__title {
     @include title;
     margin-bottom: 60px;
+    text-align: center;
+    margin-top: 40px;
   }
   &__mail{
     @include paragraph;
+    text-align: center;
   }
 }
 
