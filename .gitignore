@@ -32,4 +32,5 @@ yarn-error.log*
 
 .env
 /root
+/TMP
 adriana-the-yogini-export.json

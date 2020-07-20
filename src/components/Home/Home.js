@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import AboutMe from "./AboutMe";
 import Schedule from "./Schedule";
 import Contact from "./Contact";
@@ -15,12 +15,12 @@ import img04HQ from "../../assets/img_04_hq.jpg"
 import {Parallax} from "react-parallax";
 
 const Home = ({data}) => {
-    const img1Top = window.innerWidth < 700 ? `8vw` : window.innerWidth < 1900 ? `-4vw` : "-6vw";
+    const img1Top = window.innerWidth < 700 ? `8vw` : window.innerWidth < 1900 ? `-5vw` : "-6vw";
     const img1Height = window.innerWidth < 700 ? `50vh` : window.innerWidth < 1900 ? `80vh` : "80vh";
 
-    const img2Top = window.innerWidth < 700 ? `1vw` : window.innerWidth < 1900 ? `-1vw` : "-6vw";
-    const img2Height = window.innerWidth < 700 ? `50vh` : window.innerWidth < 1900 ? `85vh` : "90vh";
-    const img2Left = window.innerWidth < 700 ? "80px" : "50%";
+    const img2Top = window.innerWidth < 700 ? `1vw` : window.innerWidth < 1900 ? `-1vw` : "-5vw";
+    const img2Height = window.innerWidth < 700 ? `320px` : window.innerWidth < 1900 ? `1000px` : "1200px";
+    const img2Left = window.innerWidth < 700 ? `35%` : window.innerWidth < 1900 ? `40%` : "50%";
     const img2Strength = window.innerWidth < 700 ? 100 : 200;
 
 
@@ -43,7 +43,7 @@ const Home = ({data}) => {
 
             <section>
                 <Parallax bgImage={window.innerWidth < 700 ? img04Mobile : window.innerWidth < 1700 ? img04 : img04HQ} strength={img2Strength} bgImageStyle={{top: img2Top, left: img2Left}}>
-                    <div style={{height: img2Height, maxHeight: "10000px"}}>
+                    <div style={{height: img2Height}}>
 
                     </div>
                 </Parallax>

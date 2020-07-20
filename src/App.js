@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from "./components/Home";
-import useGetData from "./components/Firebase/useGetData";
+//import useGetData from "./components/Firebase/useGetData";
 import data from './components/Firebase/content.json'
 
 function App() {
