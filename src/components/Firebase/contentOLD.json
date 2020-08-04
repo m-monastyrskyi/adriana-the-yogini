@@ -1,0 +1,162 @@
+{
+    "pl": {
+        "nav": {
+            "home": "Home",
+            "about": "O mnie",
+            "offer": "Oferta",
+            "schedule": "Grafik",
+            "contact": "Kontakt"
+        },
+        "hero": {
+            "title": "ADRIANA THE YOGINI",
+            "subtitle": "Hatha Yoga & Relaxation Classes"
+        },
+        "aboutMe": {
+            "title": "O mnie",
+            "info": "<p>Jestem historyczką sztuki oraz instruktorką hatha jogi i relaksacji, pracującą w branży reklamowo-filmowej. Przygodę z jogą rozpoczęłam w 2014 r. Pasja z czasem przerodziła się w sposób na życie. Chętnie pomagam stawiać pierwsze kroki na macie w przyjaznych, kameralnych warunkach.</p><p>Ważne jest dla mnie indywidualne podejście oraz słuchanie ciała – zarówno jego potrzeb, jak i ograniczeń – dlatego lubię pracować w małych grupach. Chciałabym wprowadzać w życie innych więcej świadomego, miękkiego ruchu z uwagą na oddechu i poszanowaniu ciała, więcej odprężenia i relaksu. Poza jogą tańczę, jeżdżę na rowerze, medytuję, czytam, zwiedzam, gram w planszówki i generalnie zachwycam się światem. Lubię otaczać się naturą, muzyką, pięknymi zapachami i ludźmi z poczuciem humoru. Kocham słońce, wino i dobre jedzenie.</p><p>Satysfakcję przynosi mi dzielenie się wiedzą na temat korzyści płynących z regularnej praktyki hatha jogi i technik relaksacyjnych. Marzę o doskonaleniu swoich umiejętności nauczycielskich w bezpośrednim kontakcie z ludźmi z całego świata. Uczę podstaw jogi, ale osoby bardziej zaawansowane w temacie, nie będą się nudzić. Najlepiej czuję się podczas powolnej, spokojnej i regenerującej praktyki. Jeśli tego właśnie szukasz, spotkajmy się na wspólnych ćwiczeniach.</p>",
+            "btnCheckSchedule": "Sprawdź grafik",
+            "btnContactMe": "Napisz do mnie"
+        },
+        "offersList": [
+            {
+                "title": "ZAJĘCIA ONLINE NA PLATFORMIE ZOOM",
+                "description": "<p>Zajęcia hatha jogi przeznaczone dla wszystkich, którzy chcą się trochę poruszać, a z różnych powodów nie mogą uczestniczyć w zajęciach na sali i prywatnych sesjach lub są spoza Warszawy. Osoby początkujące spokojnie sobie poradzą, a te zaawansowane mogą liczyć na trudniejsze warianty, ponieważ każdą asanę (pozycję w jodze) można modyfikować i dopasowywać do indywidualnych potrzeb i możliwości.</p><p>- grupa otwarta - zajęcia odbywają się w czwartki o godzinie 18:30</p><p>- indywidualne rezerwacje - terminy do uzgodnienia</p><p>Zajęcia w grupie otwartej startują po potwierdzeniu udziału co najmniej 2 osób.</p><p>Koszt: 60 min. | 1 os. - 20 zł</p><p>*Karnet na 4 wejścia - 75 zł [do wykorzystania w ciągu 6 tygodni od daty zakupu]</p>",
+                "ctaText": "Pytania i zapisy:",
+                "ctaBtnText": "Napisz do mnie"
+            },
+            {
+                "title": "ZAJĘCIA INDYWIDUALNE",
+                "description": "<p>Praktyka jogi pod okiem wykwalifikowanego instruktora, bez wychodzenia z domu, to same plusy: dopasowanie sekwencji ćwiczeń do indywidualnych potrzeb, życzeń i możliwości, poczucie komfortu, intymna, przyjazna atmosfera, gwarantowane 100 % uwagi i troski, a w efekcie bieżące korekty. To świetna alternatywa dla tych, ktorzy czują się niepewnie w dużych grupach i miejscach publicznych (również ze względu na obecną sytuację epidemiologiczną).</p><p>Natomiast zajęcia indywidualne u mnie to dodatkowe pół godziny poświęcone technikom oddechowym i relaksacyjnym.</p><p>- Sesja jogi z dojazdem do Waszych domów: Koszt:<br/>60 min. | 1 os. - 50 zł<br/>60 min. | 2 os. - 80 zł</p><p>- Sesja jogi i relaksacji u mnie w domu: Koszt:<br/>90 min. | 1 os. - 50 zł<br/>90 min. | 2 os. - 80 zł</p><p>*Karnet na 4 sesje odpowiednio - 180 i 280 zł<br/>[do wykorzystania w ciągu 4 tygodni od daty zakupu]</p>",
+                "ctaText": null
+            },
+            {
+                "title": "JOGA W PLENERZE",
+                "description": "<p>Joga w plenerze to wakacyjny cykl zajęć hatha jogi w ramach rekreacji ruchowej na świeżym powietrzu.</p><p>Zapraszam w każdą* sobotę o godzinie 9:30 na Kamionkowskie Błonia Elekcyjne (Praga-Południe, tuż obok Parku Skaryszewskiego).</p><p>*O ile pogoda będzie łaskawa, a jeśli nie, to do godziny przed rozpoczęciem wydarzenia poinformuję, czy ćwiczymy.</p><p>Zbiórka przy wieżach lęgowych dla jerzyków. Wystarczy mieć ze sobą matę/koc/ręcznik i strój sportowy.</p><p>Plenerowa sesja jogi jest bezpłatna.</p><p>Dla chętnych, będzie możliwość wsparcia moich działań.</p>",
+                "ctaText": "Pytania:"
+            },
+            {
+                "title": "JOGA W DREAMSPACE",
+                "description": "<p>Możliwość wynajęcia sali [22m2] i zorganizowania zajęć w samym sercu Starego Mokotowa.</p><p>To dobra opcja dla grup znajomych lub osób przyjezdnych, które chciałyby wspólnie poćwiczyć, dostosowując termin zajęć do swojego planu dnia. [A może joga i prosecco w ramach wieczoru panieńskiego? ;) ]</p><p>Salę rezerwuję dla grup od 3 do 6 osób.</p><p>Rezerwację można odwołać do 24 h przed planowaną datą zajęć, po tym czasie zaliczka nie zostanie zwrócona.</p><p>Koszt: 60 min. | 1 os. - 30 zł</p>",
+                "ctaText": "Pytania i rezerwacje:"
+            },
+            {
+                "title": "ZAJĘCIA JOGI W BIURZE",
+                "description": "<p>\n                                    To propozycja skierowana głównie do firm i ich pracowników.\n                                </p>\n                                <p>\n                                    Koszt: 60 min. - 100 zł, <br/>\n                                    bez względu na liczbę uczestników.\n                                </p>\n                                <p>\n                                    Terminy - do ustalenia.\n                                </p>",
+                "ctaText": "Pytania i rezerwacje:"
+            },
+            {
+                "title": "WARSZTATY WYJAZDOWE",
+                "description": " <p>\n                                    Ze wzgędu na sytuację epidemiologiczną w Polsce, planowane na maj 2020 warszaty 3\n                                    STYLE JOGI na Mazurach, zostały zawieszone.\n                                </p>\n                                <p>\n                                    Nowy termin – wkótce :)\n                                </p>",
+                "ctaText": "Pytania i zapisy:"
+            }
+        ],
+        "schedule": [
+            {
+                "day": "Poniedziałek",
+                "first": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                },
+                "second": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                }
+            },
+            {
+                "day": "Wtorek",
+                "first": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                },
+                "second": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                }
+            },
+            {
+                "day": "Środa",
+                "first": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                },
+                "second": {
+                    "time": "18:30",
+                    "title": "JOGA ONLINE @ZOOM",
+                    "description": "grupa zamknięta"
+                }
+            },
+            {
+                "day": "Czwartek",
+                "first": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                },
+                "second": {
+                    "time": "18:30",
+                    "title": "JOGA ONLINE @ZOOM",
+                    "description": "grupa otwarta"
+                }
+            },
+            {
+                "day": "Piątek",
+                "first": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                },
+                "second": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                }
+            },
+            {
+                "day": "Sobota",
+                "first": {
+                    "time": "9:30",
+                    "title": "JOGA W PLENERZE",
+                    "description": "bezpłatne"
+                },
+                "second": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                }
+            },
+            {
+                "day": "Niedziela",
+                "first": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                },
+                "second": {
+                    "time": "",
+                    "title": "",
+                    "description": ""
+                }
+            }
+        ],
+        "contact": {
+            "title": "Skontaktuj się ze mną",
+            "name": "Imię:",
+            "message": "Wiadomość:",
+            "btnSend": "Wyślij",
+            "btnSending": "Wysyłam",
+            "statuses": {
+                "required": "Wymagane",
+                "errorName": "Podane imię jest nieprawidłowe!",
+                "errorEmail": "Podany email jest nieprawidłowy",
+                "errorMessage": "Wiadomość musi mieć conajmniej 10 znaków!",
+                "sendingOk": "Wiadomość została wysłana! Wkrótce się skontaktujemy!",
+                "sendingFail": "Coś poszło nie tak :("
+            }
+        }
+    }
+}

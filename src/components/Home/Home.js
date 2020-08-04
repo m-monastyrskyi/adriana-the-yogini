@@ -24,7 +24,6 @@ const Home = ({data}) => {
     const img2Left = window.innerWidth < 700 ? `100px` : window.innerWidth < 1900 ? `50%` : "50%";
     const img2Strength = window.innerWidth < 700 ? 100 : window.innerWidth < 1900 ? 100 : 500;
 
-
     return (
         <Layout navItems={data.nav}>
             <Hero heroItems={data.hero}/>

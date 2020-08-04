@@ -16,14 +16,14 @@ const Schedule = ({schedule}) => {
                                         <h2>{day.day}</h2>
                                     </div>
                                     <div className="single-day__first">
-                                        <time className="single-day__time">{day.first.time}</time>
-                                        <p className="single-day__title">{day.first.title}</p>
-                                        <p className="single-day__description">{day.first.description !== "" && `[${day.first.description}]`}</p>
+                                        <time className="single-day__time">{day.firstTime}</time>
+                                        <p className="single-day__title">{day.firstTitle}</p>
+                                        <p className="single-day__description">{day.firstDescription !== "" && `[${day.firstDescription}]`}</p>
                                     </div>
                                     <div className="single-day__second">
-                                        <time className="single-day__time">{day.second.time}</time>
-                                        <p className="single-day__title">{day.second.title}</p>
-                                        <p className="single-day__description">{day.second.description !== "" && `[${day.second.description}]`}</p>
+                                        <time className="single-day__time">{day.secondTime}</time>
+                                        <p className="single-day__title">{day.secondTitle}</p>
+                                        <p className="single-day__description">{day.secondDescription !== "" && `[${day.secondDescription}]`}</p>
                                     </div>
                                 </div>
                             )
