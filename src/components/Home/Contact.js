@@ -75,7 +75,7 @@ const Contact = ({contact}) => {
 
     return (
         <>
-            <section className="contact">
+            <section className="contact anim">
 
                 <div className="container">
 

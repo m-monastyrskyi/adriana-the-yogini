@@ -4,7 +4,8 @@ import {scroller} from "react-scroll";
 const Hero = ({heroItems}) => {
 
     return (
-        <section className="hero">
+        <>
+        <section className="hero anim">
 
             <div className="hero-bg"/>
             <div className="hero-content">
@@ -19,13 +20,15 @@ const Hero = ({heroItems}) => {
                     </h2>
                 </div>
 
-                <div className="scroll-down-arrow" onClick={() => scroller.scrollTo('about', {
-                    duration: 1000,
-                    delay: 0,
-                    smooth: 'easeInOutQuart'
-                })}/>
+
             </div>
         </section>
+            <div className="scroll-down-arrow" onClick={() => scroller.scrollTo('about', {
+                duration: 1000,
+                delay: 0,
+                smooth: 'easeInOutQuart'
+            })}/>
+        </>
     );
 };
 

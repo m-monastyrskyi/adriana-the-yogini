@@ -3,7 +3,7 @@ import React from 'react';
 const Schedule = ({schedule}) => {
     return (
         <>
-            <section className="schedule">
+            <section className="schedule anim">
                 <div className="container">
                     <h2 className="schedule__title">Grafik</h2>
                     <div className="schedule-wrapper">

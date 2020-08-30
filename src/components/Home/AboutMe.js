@@ -1,5 +1,5 @@
 import React from 'react';
-import photo02 from '../../assets/img_02.jpg';
+import aboutMeImg from '../../assets/aboutMe.jpg';
 import ButtonScrollTo from "../ButtonScrollTo";
 import parseHTML from 'react-html-parser';
 
@@ -7,11 +7,11 @@ const AboutMe = ({info}) => {
 
     return (
         <>
-            <section className="about">
+            <section className="about anim">
                 <div className="container">
                     <div className="about-content">
                         <div className="about-content__photo">
-                            <img src={photo02} alt="black and white portrait"/>
+                            <img src={aboutMeImg} alt="black and white portrait"/>
                         </div>
                         <div className="about-content__info">
                             <h3 className="about-content__title">{info.title}</h3>
