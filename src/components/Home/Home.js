@@ -30,8 +30,8 @@ const Home = ({data}) => {
 
     const img3Top = window.innerWidth < 700 ? `10px` : window.innerWidth < 1900 ? `-32px` : "70px";
     const img3Height = window.innerWidth < 700 ? `320px` : window.innerWidth < 1900 ? `700px` : "1200px";
-    const img3Left = window.innerWidth < 700 ? `65%` : window.innerWidth < 1900 ? `60%` : "50%";
-    const img3Strength = window.innerWidth < 700 ? 100 : window.innerWidth < 1900 ? 100 : 500;
+    const img3Left = window.innerWidth < 770 ? `65%` : window.innerWidth < 1900 ? `50%` : "50%";
+    const img3Strength = window.innerWidth < 700 ? 100 : window.innerWidth < 1900 ? 100 : 200;
 
 
     useEffect(() => {

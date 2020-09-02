@@ -2,15 +2,19 @@
   padding: 80px 0;
   background-color: #111418;
   border-top: 1px solid #444444;
+  min-height: 100vh;
 
   &-content {
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
     &__photo {
-      width: 40%;
+      width: 45%;
+      position: absolute;
+      top: 70px;
 
       img {
         display: block;
@@ -21,7 +25,9 @@
     }
 
     &__info {
-      width: 55%;
+      width: 50%;
+      position: relative;
+      left: 50%
     }
 
     &__title {
@@ -59,24 +65,33 @@
     &-content {
       flex-direction: column;
       justify-content: flex-start;
+      align-items: flex-start;
 
       &__photo {
-        width: 100%;
+        width: 50%;
+        position: relative;
+        top: 0;
         margin-bottom: 30px;
+
         img {
           width: auto;
           height: 100%;
           max-height: 200px;
           object-fit: contain;
         }
+
       }
 
       &__info {
         width: 100%;
+        position: relative;
+        left: 0
       }
+
       &__title {
         font-size: 1.5rem;
       }
+
       &__text {
         p {
           font-size: 1rem;
