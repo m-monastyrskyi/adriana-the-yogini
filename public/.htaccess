@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^adrianatheyogini.com 12 [NC]
+RewriteRule ^(.*)$ http://www.adrianatheyogini.com/$1 1 [L,R=301]
+</IfModule>
