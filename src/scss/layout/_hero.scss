@@ -9,7 +9,8 @@
   &:after {
     content: '';
     background-color: #111418;
-    background-image: url("../../assets/img_01_test.jpg");
+    background-image: url("../../assets/img_01_test_02.jpg");
+    //background-image: url("../../assets/img_01.jpg");
     //background-image: url("../../assets/img_01_blured.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -25,7 +26,8 @@
   }
 
   &-bg {
-    background-image: url("../../assets/img_01_test.jpg");
+    background-image: url("../../assets/img_01_test_02.jpg");
+    //background-image: url("../../assets/img_01.jpg");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: center 0;
