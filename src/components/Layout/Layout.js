@@ -5,7 +5,7 @@ import Footer from "./Footer";
 const Layout = (props) => {
     return (
         <>
-            <Navigation navItems={props.navItems} />
+            <Navigation navItems={props.navItems} language={props.language} changeLanguage={props.changeLanguage} />
             {
                 props.children
             }

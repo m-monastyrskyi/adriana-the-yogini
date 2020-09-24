@@ -1,11 +1,12 @@
 import React from 'react';
+import i18next from "i18next";
 
 const Schedule = ({schedule}) => {
     return (
         <>
             <section className="schedule anim">
                 <div className="container">
-                    <h2 className="schedule__title">Grafik</h2>
+                    <h2 className="schedule__title">{i18next.language === 'pl' ? 'Grafik' : 'Schedule'}</h2>
                     <div className="schedule-wrapper">
 
                         {

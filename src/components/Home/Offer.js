@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonScrollTo from "../ButtonScrollTo";
 import parseHTML from 'react-html-parser';
+import i18next from "i18next";
 
 
 const Offer = ({offersList}) => {
@@ -8,7 +9,7 @@ const Offer = ({offersList}) => {
         <>
             <section className="offers">
                 <div className="container">
-                    <h2 className="offers__title">Oferta</h2>
+                    <h2 className="offers__title">{i18next.language === 'pl' ? 'Oferta' : 'Offer'}</h2>
                     <div className="offers__wrapper">
                         {
                             offersList.map((offer, index) => <div className="offers-item" key={index}>

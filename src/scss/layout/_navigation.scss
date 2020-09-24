@@ -4,6 +4,10 @@
   opacity: .8;
 }
 
+.lng {
+  //margin-right: -.5em;
+}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -28,7 +32,6 @@
   a {
     color: $color-white;
     border-bottom: none;
-
     display: inline-block;
     padding: 1.5em 1em;
     margin-left: 1em;

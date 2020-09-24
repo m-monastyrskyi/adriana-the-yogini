@@ -85,7 +85,7 @@ const Contact = ({contact}) => {
                             <h2>{contact.title}</h2>
                         </div>
                         <div className="section-contact__mail">
-                            <p>Wyślij email: <EmailLink/> <br />lub wypełnij formularz</p>
+                            <p>{contact.ctaText1} <EmailLink/> <br />{contact.ctaText2}</p>
                         </div>
                         {
                             serverResponse && serverResponse === contact.statuses.sendingFail

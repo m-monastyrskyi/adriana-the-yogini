@@ -18,7 +18,7 @@ import img04HQ from "../../assets/img_04_hq.jpg"
 import img05 from "../../assets/new_1.jpg"
 import {Parallax} from "react-parallax";
 
-const Home = ({data}) => {
+const Home = ({data, language, changeLanguage}) => {
     const img1Top = window.innerWidth < 700 ? `32px` : window.innerWidth < 1900 ? `-10px` : "-50px";
     const img1Height = window.innerWidth < 700 ? `320px` : window.innerWidth < 1900 ? `600px` : "1600px";
     const img1Strength = window.innerWidth < 700 ? 100 : window.innerWidth < 1900 ? 100 : 300;
@@ -60,7 +60,7 @@ const Home = ({data}) => {
     }, [])
 
     return (
-        <Layout navItems={data.nav}>
+        <Layout navItems={data.nav} language={language} changeLanguage={changeLanguage}>
             <Hero heroItems={data.hero}/>
             <AboutMe info={data.aboutMe}/>
             <Parallax bgImage={window.innerWidth < 700 ? img03Mobile : window.innerWidth < 1700 ? img03 : img03HQ}

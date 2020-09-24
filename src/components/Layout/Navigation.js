@@ -3,10 +3,9 @@ import {Link as ScrollLink} from 'react-scroll';
 import classNames from 'classnames';
 import SocialIcons from "./SocialIcons";
 
-const Navigation = ({navItems}) => {
+const Navigation = ({navItems, language, changeLanguage}) => {
     const [bgClass, setBgClass] = useState(false);
     const [isHamburgerActive, setIsHamburgerActive] = useState(false);
-
 
     const handleScroll = () => {
         window.pageYOffset > 150 ? setBgClass(true) : setBgClass(false);
@@ -14,15 +13,18 @@ const Navigation = ({navItems}) => {
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll)
-
         return () => {
             window.removeEventListener("scroll", handleScroll)
         }
-
     }, [])
 
     const handleHamburgerClick = () => {
         setIsHamburgerActive(prev => !prev);
+    }
+
+    const handleLangClick = () =>{
+        changeLanguage();
+        setIsHamburgerActive(false)
     }
 
     return (
@@ -67,6 +69,9 @@ const Navigation = ({navItems}) => {
                                             onClick={() => setIsHamburgerActive(false)}>
                                     {navItems.contact}
                                 </ScrollLink>
+                            </li>
+                            <li className="navigation__item lng">
+                                <a onClick={handleLangClick}>{language === 'pl' ? 'en' : 'pl'}</a>
                             </li>
 
                             <li className="navigation__item">
