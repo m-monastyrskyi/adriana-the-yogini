@@ -10,9 +10,13 @@ function App() {
 
 
     useEffect(() => {
+        console.log(i18n.language);
         if (i18n.language.toLowerCase().includes('en')) {
             i18n.changeLanguage('en')
-        } else i18n.changeLanguage('pl')
+        } else {
+            i18n.changeLanguage('pl')
+            setLanguage('pl')
+        }
     }, [])
 
     // useEffect(() => {
